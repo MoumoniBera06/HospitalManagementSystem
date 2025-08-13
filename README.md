@@ -14,6 +14,7 @@ A simple console-based hospital management system in Java that lets you manage p
 - MySQL JDBC Driver  
 - Database schema (`hospital`) set up as below:
 
+```
 CREATE DATABASE hospital;
 
 USE hospital;
@@ -39,6 +40,7 @@ CREATE TABLE appointments (
     FOREIGN KEY (patient_id) REFERENCES patients(id),
     FOREIGN KEY (doctor_id) REFERENCES doctors(id)
 );
+```
 
 ### Adding Sample Doctors
 INSERT INTO doctors (name, specialization) VALUES
